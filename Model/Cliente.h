@@ -7,6 +7,7 @@
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 //prueba comentsrio 18 57
+//prueba 2
 class Cliente {
 public: 
  
