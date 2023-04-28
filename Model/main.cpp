@@ -30,7 +30,7 @@ int main() {
 	 Pablo.agregarArt(art6);
 	 Pablo.agregarArt(art7);
 	 Pablo.agregarArt(art8);
-
+	 
 	 Empleados UNO ("Juan", "32.342.344", "Experiencia", "Vendedor");
 
 	 UNO.generarPresupuesto(Cliente::ListaArtCli);
