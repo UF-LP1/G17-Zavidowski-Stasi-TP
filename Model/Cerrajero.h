@@ -11,7 +11,8 @@
 
 class Cerrajero: public Empleados {
 public: 
-    
+    Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, llave tipollave_, string servicio_);
+    ~Cerrajero();
 enum llave get_tipollave();
     
 float get_precio();
@@ -31,7 +32,7 @@ void set_telefonoc(string NuevoTel);
 /**
  * @param Cliente.llavenecesaria
  */
-enum llave hacerllave(void Cliente.llavenecesaria);
+enum llave hacerllave(Cliente.llavenecesaria);
 private: 
     enum llave tipollave;
     const string servicio;

@@ -6,12 +6,11 @@
 #include <forward_list>
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
-//prueba comentsrio 18 57
-//prueba 2
+
 class Cliente {
 public: 
  
-void agregarArt(Articulos ListaAtrCli);
+void agregarArt(Articulos nombre_art);
 
 const string get_nombrecli();
     
@@ -32,7 +31,6 @@ bool pagar(float Total);
 /**
  * @param Articulos
  */
-Articulos elegirprod(Articulos producelegido);
 private: 
     std::forward_list<Articulos> ListaArtCli;
     const string nombrecli;
@@ -42,6 +40,7 @@ private:
     const string domicilio;
     enum llave llavenecesaria;
     string instalacionrota;
+   
 };
 
 #endif //_CLIENTE_H

@@ -1,7 +1,6 @@
 /**
  * Project Untitled
  */
-
 #include "Vendedor.h"
 #include "Cliente.h"
 
@@ -10,8 +9,9 @@
  */
 
 
-void Cliente::agregarArt(Articulos ListaArtCli){
-
+void Cliente::agregarArt(Articulos nombre_art){
+    ListaArtCli.push_front(nombre_art);
+    return;
 }
 
 /**
@@ -55,6 +55,3 @@ bool Cliente::pagar( Vendedor.cobrar) {
  * @param Articulos
  * @return Articulos
  */
-Articulos Cliente::elegirprod(void Articulos) {
-    return nullptr;
-}

@@ -9,7 +9,10 @@
  * Vendedor implementation
  */
 
-
+Vendedor::Vendedor(string nombreemp_, string DNI_, string curriculum_, string rubro_, int descuento_, string metododescuento_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_){
+    this->descuento = descuento_;
+    this->metododescuento = metododescuento_;
+}
 /**
  * @param Cliente.lista
  * @return int
@@ -32,4 +35,8 @@ void Vendedor::atender(void metodopago) {
  */
 int Vendedor::Descuento(void Cliente.metodopago) {
     return 0;
+}
+
+Vendedor::~Vendedor()
+{
 }

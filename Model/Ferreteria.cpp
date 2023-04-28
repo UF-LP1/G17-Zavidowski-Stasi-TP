@@ -9,9 +9,10 @@
  * Ferreteria implementation
  */
 
+Ferreteria::Ferreteria(string nombref_, string telefono_) : nombref(nombref_), telefono(telefono_) {}
 
-void Ferreteria::Operation1() {
-
+Ferreteria::~Ferreteria()
+{
 }
 
 /**
@@ -78,5 +79,5 @@ int Ferreteria::Devolucion(void Articulo) {
  * @return Articulo
  */
 Articulos Ferreteria::Cambioprodu(Articulos) {
-    return Articulos;
+    return;
 }

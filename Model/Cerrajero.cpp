@@ -2,19 +2,26 @@
  * Project Untitled
  */
 
-
+#include "Empleados.h"
 #include "Cerrajero.h"
 
 /**
  * Cerrajero implementation
  */
 
+Cerrajero::Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, llave tipollave_, string servicio_): Empleados(nombreemp_, DNI_, curriculum_, rubro_)
+{
+}
+
+Cerrajero::~Cerrajero()
+{
+}
 
 /**
  * @return enum llave
  */
 enum llave Cerrajero::get_tipollave() {
-    return nullptr;
+    return ;
 }
 
 /**
@@ -52,5 +59,5 @@ void Cerrajero::set_telefonoc(string NuevoTel) {
  * @return enum llave
  */
 enum llave Cerrajero::hacerllave(Cliente.llavenecesaria) {
-    return nullptr;
+    return;
 }

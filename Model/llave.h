@@ -9,3 +9,5 @@
 enum llave { simple, dobletambor, codificadas, llavesmagneticas };
 
 #endif //_LLAVE_H
+
+//tenemos que hacer algo con esto?

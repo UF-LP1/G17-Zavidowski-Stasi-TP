@@ -5,9 +5,14 @@
 #include "Header.h"
 #ifndef _EMPLEADOS_H
 #define _EMPLEADOS_H
+#include "Articulos.h"
+#include "Cliente.h"
 
 class Empleados {
 public: 
+    Empleados(string nombreemp_, string DNI_, string curriculum_, string rubro_);
+    ~Empleados();
+float generarPresupuesto(forward_list<Articulos> ListaArtCli);
     
 const string get_nombreemp();
     

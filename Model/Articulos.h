@@ -8,13 +8,13 @@
 
 class Articulos {
 public: 
-    Articulos(float precioart_, string material_, int numarticulo_) : precioart(precioart_), material(material_), numarticulo(numarticulo_){}
+    Articulos(float precioart_, string material_, int numarticulo_);
     ~Articulos();
+
 float get_precioart();
 
-    
 const string get_material();
-    
+  
 const int get_numarticulo();
     
 /**

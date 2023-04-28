@@ -11,6 +11,8 @@
 
 class Portatiles: public Herramientas {
 public: 
+    Portatiles(string modelo_, string funcion_, float precioherra_, int tiempoalq_, int duracionbat_);
+    ~Portatiles();
     
 void cargar();
     

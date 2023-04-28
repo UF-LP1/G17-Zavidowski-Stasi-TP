@@ -8,7 +8,9 @@
 
 class Herramientas {
 public: 
-    
+    Herramientas(string modelo_, string funcion_, float precioherra_, int tiempoalq_);
+    ~Herramientas();
+
 const string get_modelo();
     
 float get_precioherra();
@@ -37,10 +39,10 @@ void set_tiempoalq(int TiempoNuevo);
 int devolverseguro();
 protected: 
     const string modelo;
-    float precioherra;
-    float seguro;
-    int tiempoalq;
     const string funcion;
+    float precioherra;
+    int tiempoalq;
+    float seguro;
 };
 
 #endif //_HERRAMIENTAS_H

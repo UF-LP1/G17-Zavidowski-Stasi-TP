@@ -54,9 +54,6 @@
     <ClCompile Include="..\..\Model\Manuales.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Model\Persona.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Model\Plomero.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -69,14 +66,8 @@
     <ClCompile Include="..\..\Model\Vendedor.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Presupuesto.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Model\main.cpp">
       <Filter>Archivos de recursos</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Model\Source.cpp">
-      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +113,6 @@
     <ClInclude Include="..\..\Model\Manuales.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Model\Persona.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Model\Plomero.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -138,9 +126,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Model\Header.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Presupuesto.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

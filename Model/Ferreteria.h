@@ -8,8 +8,9 @@
 
 class Ferreteria {
 public: 
+    Ferreteria(string nombref_, string telefono_);
+    ~Ferreteria();
     
-void Operation1();
     
 string get_ubicacion();
     
@@ -34,12 +35,7 @@ void vender();
 /**
  * @param Articulo
  */
-int Devolucion(void Articulo);
     
-/**
- * @param Articulo
- */
-Articulos Cambioprodu(void Articulo);
 private: 
     string ubicacion;
     string horario;

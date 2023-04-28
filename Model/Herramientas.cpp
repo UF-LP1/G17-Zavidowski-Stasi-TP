@@ -8,7 +8,14 @@
 /**
  * Herramientas implementation
  */
+Herramientas::Herramientas(string modelo_, string funcion_, float precioherra_, int tiempoalq_) : modelo(modelo_), funcion(funcion_) {
+    this->precioherra = precioherra_;
+    this->tiempoalq = tiempoalq_;
+}
 
+Herramientas::~Herramientas()
+{
+}
 
 /**
  * @return const string
@@ -21,7 +28,7 @@ const string Herramientas::get_modelo() {
  * @return unsigned float
  */
 float Herramientas::get_precioherra() {
-    return nullptr;
+    return;
 }
 
 /**
@@ -34,8 +41,8 @@ float Herramientas::get_seguro() {
 /**
  * @return unsigned int
  */
-unsigned int Herramientas::get_tiempoalq() {
-    return nullptr;
+int Herramientas::get_tiempoalq() {
+    return ;
 }
 
 /**

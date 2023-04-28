@@ -8,13 +8,20 @@
 /**
  * Articulos implementation
  */
+Articulos::Articulos(float precioart_, string material_, int numarticulo_) : material(material_), numarticulo(numarticulo_) {
+    this->precioart = precioart_;
+}
+
+Articulos::~Articulos()
+{
+}
 
 
 /**
  * @return unsigned float
  */
 float Articulos::get_precioart() {
-    return nullptr;
+    return ;
 }
 
 /**
@@ -28,7 +35,7 @@ const string Articulos::get_material() {
  * @return const int
  */
 const int Articulos::get_numarticulo() {
-    return int;
+    return ;
 }
 
 /**

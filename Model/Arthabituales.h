@@ -9,7 +9,7 @@
 
 class Arthabituales : public Articulos {
 public:
-    Arthabituales(float precioart_, string material_, int numarticulo_, string tipo_) : Articulos (precioart_, material_, numarticulo_), tipo(tipo_){}
+    Arthabituales(float precioart_, string material_, int numarticulo_, string tipo_);
     ~Arthabituales();
 
 private: 

@@ -1,18 +1,25 @@
-#include "Presupuesto.cpp"
+
 #include <forward_list>
-#include "../../Model/Bazar.h"
-#include "../../Model/Arthabituales.h"
-#include "../../Model/Iluminacion.h"
+#include "Header.h"
+#include "Bazar.h"
+#include "Iluminacion.h"
+#include "Cables.h"
+#include "Arthabituales.h"
+#include "Cliente.h"
+
 
 int main() {
-	std::forward_list<Articulos> ListaArt;
-	ListaArt.push_front(Bazar(3.15, "madera", 3426, "blanco", 32));
-	ListaArt.push_front(Bazar(8.20, "plastico", 3496, "negro", 29));
-	ListaArt.push_front(Arthabituales(10.8, "metal", 4659, 8));
-	ListaArt.push_front(Arthabituales(21.2, "metal", 6342, 2));
-	ListaArt.push_front(Arthabituales(29.2, "plastico", 2993, 5));
-	ListaArt.push_front(Iluminacion(23.5, "plastico", 3488, 22, 82, "doble", "universal"));
-	ListaArt.push_front(Arthabituales(445, "plastico", 7632, 6));
-	ListaArt.push_front(Iluminacion(21.9, "metal", 2110, 21, 80, "simple", "a"));
+
+	Bazar art1(34.3, "madera", 3229, "marron", 22.2);
+	Arthabituales art2(21.2, "metal", 2216, "clavo");
+	Iluminacion art3(19.2, "plastico", 6429, 20, 68, "doble", "universal");
+	Cables art4(13.2, "goma", 8536, 22, 80, 100);
+	Bazar art5(70.8, "madera", 7329, "blanco", 38.5);
+	Arthabituales art6(18.6, "metal", 2826, "tornillo");
+	Iluminacion art7(14.6,"plastico", 6820, 40, 80, "simple", "USB");
+	Cables art8(33.2, "goma", 5216, 20, 180, 200);
+
+	 Cliente.agregarArt(Bazar art1);
+
 
 }

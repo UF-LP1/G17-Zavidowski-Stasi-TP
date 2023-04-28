@@ -11,6 +11,8 @@
 
 class Manuales: public Herramientas {
 public: 
+    Manuales(string modelo_, string funcion_, float precioherra_, int tiempoalq_, string modouso_);
+    ~Manuales();
     
 void usar();
 private: 

@@ -11,7 +11,7 @@
 
 class Electricidad: public Articulos {
 public: 
-    Electricidad(float precioart_, string material_, int numarticulo_,int potencia_, float consumo_) : Articulos(precioart_, material_, numarticulo_), potencia(potencia_),consumo(consumo_) {}
+    Electricidad(float precioart_, string material_, int numarticulo_, int potencia_, float consumo_);
     ~Electricidad();
 int get_potencia();
     

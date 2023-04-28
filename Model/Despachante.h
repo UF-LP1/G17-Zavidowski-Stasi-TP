@@ -11,6 +11,8 @@
 
 class Despachante: public Empleados {
 public: 
+    Despachante(string nombreemp_, string DNI_, string curriculum_, string rubro_, int costoenvio_);
+    ~Despachante();
     
 /**
  * @param Cliente.domicilio
@@ -19,7 +21,7 @@ void entregarpedido(Cliente.domicilio);
     
 int cobrar();
 private: 
-    string vehiculo;
+  
      int costoenvio;
 };
 

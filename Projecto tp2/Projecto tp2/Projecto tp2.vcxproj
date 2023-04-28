@@ -141,13 +141,10 @@
     <ClCompile Include="..\..\Model\Iluminacion.cpp" />
     <ClCompile Include="..\..\Model\main.cpp" />
     <ClCompile Include="..\..\Model\Manuales.cpp" />
-    <ClCompile Include="..\..\Model\Persona.cpp" />
     <ClCompile Include="..\..\Model\Plomero.cpp" />
     <ClCompile Include="..\..\Model\Portatiles.cpp" />
     <ClCompile Include="..\..\Model\Repuestos.cpp" />
-    <ClCompile Include="..\..\Model\Source.cpp" />
     <ClCompile Include="..\..\Model\Vendedor.cpp" />
-    <ClCompile Include="Presupuesto.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Model\Arthabituales.h" />
@@ -165,12 +162,10 @@
     <ClInclude Include="..\..\Model\Iluminacion.h" />
     <ClInclude Include="..\..\Model\llave.h" />
     <ClInclude Include="..\..\Model\Manuales.h" />
-    <ClInclude Include="..\..\Model\Persona.h" />
     <ClInclude Include="..\..\Model\Plomero.h" />
     <ClInclude Include="..\..\Model\Portatiles.h" />
     <ClInclude Include="..\..\Model\Repuestos.h" />
     <ClInclude Include="..\..\Model\Vendedor.h" />
-    <ClInclude Include="Presupuesto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
