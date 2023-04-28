@@ -2,7 +2,7 @@
  * Project Untitled
  */
 
-
+#include "Cliente.h"
 #include "Vendedor.h"
 
 /**
@@ -17,7 +17,7 @@ Vendedor::Vendedor(string nombreemp_, string DNI_, string curriculum_, string ru
  * @param Cliente.lista
  * @return int
  */
-int Vendedor::cobrar(void Cliente.lista) {
+int Vendedor::cobrar(Cliente.lista) {
     return 0;
 }
 
@@ -25,7 +25,7 @@ int Vendedor::cobrar(void Cliente.lista) {
  * @param metodopago
  * @return void
  */
-void Vendedor::atender(void metodopago) {
+void Vendedor::atender(Cliente.metodopago) {
     return;
 }
 
@@ -33,7 +33,7 @@ void Vendedor::atender(void metodopago) {
  * @param Cliente.metodopago
  * @return int
  */
-int Vendedor::Descuento(void Cliente.metodopago) {
+int Vendedor::Descuento(Cliente.metodopago) {
     return 0;
 }
 

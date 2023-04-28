@@ -21,35 +21,35 @@ Herramientas::~Herramientas()
  * @return const string
  */
 const string Herramientas::get_modelo() {
-    return nullptr;
+    return this->modelo;
 }
 
 /**
  * @return unsigned float
  */
 float Herramientas::get_precioherra() {
-    return;
+    return this->precioherra;
 }
 
 /**
  * @return float
  */
 float Herramientas::get_seguro() {
-    return 0.0;
+    return this->seguro;
 }
 
 /**
  * @return unsigned int
  */
 int Herramientas::get_tiempoalq() {
-    return ;
+    return this->tiempoalq ;
 }
 
 /**
  * @return const string
  */
 const string Herramientas::get_funcion() {
-    return nullptr;
+    return this->funcion;
 }
 
 /**
@@ -57,6 +57,7 @@ const string Herramientas::get_funcion() {
  * @return void
  */
 void Herramientas::set_precio(float NuevoPre) {
+    precioherra = NuevoPre;
     return;
 }
 
@@ -65,6 +66,7 @@ void Herramientas::set_precio(float NuevoPre) {
  * @return void
  */
 void Herramientas::set_seguro(float NuevoSeguro) {
+    seguro = NuevoSeguro;
     return;
 }
 
@@ -73,6 +75,7 @@ void Herramientas::set_seguro(float NuevoSeguro) {
  * @return void
  */
 void Herramientas::set_tiempoalq(int TiempoNuevo) {
+    tiempoalq = TiempoNuevo;
     return;
 }
 
@@ -80,5 +83,8 @@ void Herramientas::set_tiempoalq(int TiempoNuevo) {
  * @return int
  */
 int Herramientas::devolverseguro() {
-    return 0;
+    if (tiempoalq < 30)
+        return seguro;
+    else
+        return 0;
 }

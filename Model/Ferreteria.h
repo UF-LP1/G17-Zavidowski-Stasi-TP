@@ -36,6 +36,7 @@ void vender();
  * @param Articulo
  */
     
+
 private: 
     string ubicacion;
     string horario;

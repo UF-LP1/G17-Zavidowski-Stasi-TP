@@ -21,21 +21,21 @@ Repuestos::~Repuestos()
  * @return const string
  */
 const string Repuestos::get_nomb() {
-    return;
+    return this->nombreproduc;
 }
 
 /**
  * @return const string
  */
 const string Repuestos::get_descripcion() {
-    return ;
+    return this->descripcion ;
 }
 
 /**
  * @return float
  */
 float Repuestos::get_tam() {
-    return 0.0;
+    return this->tamanyo;
 }
 
 /**
@@ -43,5 +43,6 @@ float Repuestos::get_tam() {
  * @return void
  */
 void Repuestos::set_tam(float NuevoTam) {
+    tamanyo = NuevoTam;
     return;
 }

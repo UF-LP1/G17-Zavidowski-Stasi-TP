@@ -9,12 +9,16 @@
 
 class Cliente {
 public: 
+    Cliente( string nombrecli_, int numcliente_, string metodopago_);
+    ~Cliente();
  
 void agregarArt(Articulos nombre_art);
 
+Articulos get_lista();
+
 const string get_nombrecli();
     
-const string get_numcliente();
+const int get_numcliente();
     
 string get_pago();
     
@@ -36,10 +40,11 @@ private:
     const string nombrecli;
     const int numcliente;
     string metodopago;
-    Articulos lista;
-    const string domicilio;
+    Articulos lista; 
+    string domicilio;
     enum llave llavenecesaria;
     string instalacionrota;
+
    
 };
 

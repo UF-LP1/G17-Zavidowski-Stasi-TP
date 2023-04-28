@@ -19,28 +19,28 @@ Ferreteria::~Ferreteria()
  * @return string
  */
 string Ferreteria::get_ubicacion() {
-    return "";
+    return this->ubicacion;
 }
 
 /**
  * @return string
  */
 string Ferreteria::get_horario() {
-    return "";
+    return this->horario;
 }
 
 /**
  * @return string
  */
 string Ferreteria::get_nombref() {
-    return "";
+    return this->nombref;
 }
 
 /**
  * @return string
  */
 string Ferreteria::get_telefono() {
-    return "";
+    return this->telefono;
 }
 
 /**
@@ -48,6 +48,7 @@ string Ferreteria::get_telefono() {
  * @return void
  */
 void Ferreteria::set_ubi(string NuevaUbi) {
+    ubicacion = NuevaUbi;
     return;
 }
 
@@ -56,6 +57,7 @@ void Ferreteria::set_ubi(string NuevaUbi) {
  * @return void
  */
 void Ferreteria::set_horario(string NuevoHorario) {
+    horario = NuevoHorario;
     return;
 }
 
@@ -70,7 +72,7 @@ void Ferreteria::vender() {
  * @param Articulo
  * @return int
  */
-int Ferreteria::Devolucion(void Articulo) {
+int Ferreteria::Devolucion(Articulos) {
     return 0;
 }
 

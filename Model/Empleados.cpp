@@ -30,28 +30,28 @@ float Empleados::generarPresupuesto(forward_list<Articulos> ListaArt)
  * @return const string
  */
 const string Empleados::get_nombreemp() {
-    return nullptr;
+    return this->nombreemp;
 }
 
 /**
  * @return const string
  */
 const string Empleados::get_DNI() {
-    return nullptr;
+    return this->DNI;
 }
 
 /**
  * @return unsigned float
  */
  float Empleados::get_sueldo() {
-    return ;
+    return this->sueldo;
 }
 
 /**
  * @return string
  */
 string Empleados::get_horariolab() {
-    return "";
+    return this->horariolab;
 }
 
 /**
@@ -59,6 +59,7 @@ string Empleados::get_horariolab() {
  * @return void
  */
 void Empleados::set_sueldo(float NuevoSueldo) {
+	sueldo = NuevoSueldo;
     return;
 }
 
@@ -67,5 +68,6 @@ void Empleados::set_sueldo(float NuevoSueldo) {
  * @return void
  */
 void Empleados::set_horariolab(string NuevoHorario) {
+	horariolab = NuevoHorario;
     return;
 }

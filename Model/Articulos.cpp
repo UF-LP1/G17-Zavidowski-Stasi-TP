@@ -21,21 +21,21 @@ Articulos::~Articulos()
  * @return unsigned float
  */
 float Articulos::get_precioart() {
-    return ;
+    return this->precioart ;
 }
 
 /**
  * @return const string
  */
 const string Articulos::get_material() {
-    return nullptr;
+    return this->material;
 }
 
 /**
  * @return const int
  */
 const int Articulos::get_numarticulo() {
-    return ;
+    return this->numarticulo;
 }
 
 /**
@@ -43,5 +43,6 @@ const int Articulos::get_numarticulo() {
  * @return void
  */
 void Articulos::set_precio(float NuevoPrecio) {
+    precioart = NuevoPrecio; 
     return;
 }
