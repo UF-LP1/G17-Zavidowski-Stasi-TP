@@ -33,7 +33,7 @@ int main() {
 	 
 	 Empleados UNO ("Juan", "32.342.344", "Experiencia", "Vendedor");
 
-	 UNO.generarPresupuesto(Cliente::ListaArtCli);
+	 UNO.generarPresupuesto(Pablo.get_lista());
 
 	 Cliente.pagar(float acumprecio);
 

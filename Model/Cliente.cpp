@@ -20,7 +20,7 @@ void Cliente::agregarArt(Articulos nombre_art){
     return;
 }
 
-Articulos Cliente::get_lista()
+forward_list<Articulos> Cliente::get_lista()
 {
     return this->ListaArtCli;
 }

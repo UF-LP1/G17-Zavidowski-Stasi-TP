@@ -14,7 +14,7 @@ public:
  
 void agregarArt(Articulos nombre_art);
 
-Articulos get_lista();
+forward_list<Articulos> get_lista();
 
 const string get_nombrecli();
     
