@@ -21,21 +21,21 @@ Cerrajero::~Cerrajero()
  * @return enum llave
  */
 enum llave Cerrajero::get_tipollave() {
-    return ;
+    return this->tipollave;
 }
 
 /**
  * @return float
  */
 float Cerrajero::get_precio() {
-    return 0.0;
+    return this->precio;
 }
 
 /**
  * @return string
  */
 string Cerrajero::get_telefonoc() {
-    return "";
+    return this->telefonoc;
 }
 
 /**
@@ -43,6 +43,7 @@ string Cerrajero::get_telefonoc() {
  * @return void
  */
 void Cerrajero::set_precio(float Nuevopre) {
+    precio = Nuevopre;
     return;
 }
 
@@ -51,6 +52,7 @@ void Cerrajero::set_precio(float Nuevopre) {
  * @return void
  */
 void Cerrajero::set_telefonoc(string NuevoTel) {
+    telefonoc = NuevoTel;
     return;
 }
 
@@ -59,5 +61,6 @@ void Cerrajero::set_telefonoc(string NuevoTel) {
  * @return enum llave
  */
 enum llave Cerrajero::hacerllave(Cliente.llavenecesaria) {
+
     return;
 }

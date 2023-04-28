@@ -27,5 +27,5 @@ Plomero::~Plomero()
  * @return unsignead int
  */
 int Plomero::get_valorservicio() {
-    return nullptr;
+    return this->valorservicio;
 }

@@ -21,12 +21,12 @@ Electricidad::~Electricidad()
  * @return int
  */
 int Electricidad::get_potencia() {
-    return 0;
+    return this->potencia;
 }
 
 /**
  * @return float
  */
 float Electricidad::get_consumo() {
-    return 0.0;
+    return this->consumo;
 }

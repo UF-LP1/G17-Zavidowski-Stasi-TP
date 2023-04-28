@@ -18,5 +18,5 @@ Cables::~Cables()
  * @return const int
  */
 const int Cables::get_largo() {
-    return ;
+    return this->largo;
 }
