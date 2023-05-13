@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 
 #ifndef _ILUMINACION_H
 #define _ILUMINACION_H

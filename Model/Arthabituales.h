@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 
 #ifndef _ARTHABITUALES_H
 #define _ARTHABITUALES_H

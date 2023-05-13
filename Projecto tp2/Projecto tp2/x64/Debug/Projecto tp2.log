@@ -1,138 +1,33 @@
 ﻿  Arthabituales.cpp
   Articulos.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(17,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(17,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(31,12): error C2062: tipo 'int' inesperado
   Bazar.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Bazar.cpp(24,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'const float'
-C:\Users\zavid\source\repos\tplp1\Model\Bazar.cpp(24,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
   Cables.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Cables.cpp(17,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'const int'
-C:\Users\zavid\source\repos\tplp1\Model\Cables.cpp(17,12): message : Un elemento nullptr nativo solo se puede convertir en bool o, si se usa reinterpret_cast, en un tipo entero
   Cerrajero.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,28): error C3927: "->": no se admite el tipo de valor devuelto final después de un declarador que no es de función
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,35): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,36): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,28): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,36): error C2146: error de sintaxis: falta ')' delante del identificador 'llavenecesaria'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,36): error C3646: 'llavenecesaria': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,50): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.h(34,51): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(17,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'llave'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(17,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(54,41): error C2761: "int Cerrajero::hacerllave(int)": no se permite la nueva declaración del miembro
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(54,34): error C2065: 'Cliente': identificador no declarado
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(54,58): error C2143: error de sintaxis: falta ';' delante de '{'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(55,5): error C2059: error de sintaxis: 'return'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(56,1): error C2059: error de sintaxis: '}'
-C:\Users\zavid\source\repos\tplp1\Model\Cerrajero.cpp(56,1): error C2143: error de sintaxis: falta ';' delante de '}'
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(7,35): error C2504: 'Empleados': clase base sin definir
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(13,14): error C2061: error de sintaxis: identificador 'Cliente'
   Cliente.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(19,12): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(24,19): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(29,15): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,30): error C2143: error de sintaxis: falta ')' delante de '.'
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,30): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,31): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,31): error C3646: 'cobrar': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,37): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,39): error C3551: si se usa un tipo de valor devuelto final, el tipo de valor devuelto inicial será el especificador de tipo único "auto" (no "bool")
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(50,15): error C2511: 'bool Cliente::pagar(Vendedor)': la función miembro sobrecargada no se ha encontrado en 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(10,7): message : vea la declaración de 'Cliente'
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(5,1): error C2512: 'Articulos': no hay disponible un constructor predeterminado adecuado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.h(8,7): message : vea la declaración de 'Articulos'
   Despachante.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.h(18,21): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,39): error C3927: "->": no se admite el tipo de valor devuelto final después de un declarador que no es de función
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,46): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,47): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,39): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,47): error C2146: error de sintaxis: falta ')' delante del identificador 'domicilio'
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,47): error C3646: 'domicilio': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,56): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.cpp(17,19): error C2511: 'void Despachante::entregarpedido(int)': la función miembro sobrecargada no se ha encontrado en 'Despachante'
-C:\Users\zavid\source\repos\tplp1\Model\Despachante.h(12,7): message : vea la declaración de 'Despachante'
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(7,35): error C2504: 'Empleados': clase base sin definir
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(13,14): error C2061: error de sintaxis: identificador 'Cliente'
   Electricidad.cpp
   Empleados.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Empleados.cpp(31,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\Empleados.cpp(31,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(7,35): error C2504: 'Empleados': clase base sin definir
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(13,14): error C2061: error de sintaxis: identificador 'Cliente'
   Ferreteria.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.h(37,21): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.h(42,28): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.cpp(72,33): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.cpp(80,23): error C2511: 'Articulos Ferreteria::Cambioprodu(Articulos)': la función miembro sobrecargada no se ha encontrado en 'Ferreteria'
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.h(9,7): message : vea la declaración de 'Ferreteria'
-C:\Users\zavid\source\repos\tplp1\Model\Ferreteria.cpp(81,12): error C2275: 'Articulos': se esperaba una expresión en lugar de un tipo
-  Herramientas.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.cpp(24,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.cpp(24,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.cpp(37,44): error C2556: 'unsigned int Herramientas::get_tiempoalq(void)': la función sobrecargada solo se diferencia de 'int Herramientas::get_tiempoalq(void)' por el tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.h(18,5): message : vea la declaración de 'Herramientas::get_tiempoalq'
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.cpp(37,28): error C2371: 'Herramientas::get_tiempoalq': nueva definición; tipos básicos distintos
-C:\Users\zavid\source\repos\tplp1\Model\Herramientas.h(18,5): message : vea la declaración de 'Herramientas::get_tiempoalq'
   Iluminacion.cpp
-  main.cpp
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(13,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(14,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(15,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(16,45): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(17,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(18,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(19,65): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(20,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\main.cpp(22,10): error C2059: error de sintaxis: '.'
-  Manuales.cpp
-  Persona.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(31,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'int'
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(31,12): message : Un elemento nullptr nativo solo se puede convertir en bool o, si se usa reinterpret_cast, en un tipo entero
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(38,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(38,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(45,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'float'
-C:\Users\zavid\source\repos\tplp1\Model\Persona.cpp(45,12): message : nullptr solamente se puede convertir en los tipos de puntero e identificador
   Plomero.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.h(18,15): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,29): error C3927: "->": no se admite el tipo de valor devuelto final después de un declarador que no es de función
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,36): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,37): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,29): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,37): error C2146: error de sintaxis: falta ')' delante del identificador 'instalacionrota'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,37): error C3646: 'instalacionrota': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,52): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(16,15): error C2511: 'void Plomero::arreglar(int)': la función miembro sobrecargada no se ha encontrado en 'Plomero'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.h(12,7): message : vea la declaración de 'Plomero'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(24,12): error C2440: 'return': no se puede realizar la conversión de 'nullptr' a 'int'
-C:\Users\zavid\source\repos\tplp1\Model\Plomero.cpp(24,12): message : Un elemento nullptr nativo solo se puede convertir en bool o, si se usa reinterpret_cast, en un tipo entero
-  Portatiles.cpp
-  Repuestos.cpp
-  Source.cpp
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(7,35): error C2504: 'Empleados': clase base sin definir
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(13,14): error C2061: error de sintaxis: identificador 'Cliente'
   Vendedor.cpp
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(19,12): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(24,19): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(29,15): error C2061: error de sintaxis: identificador 'Cliente'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,27): error C3927: "->": no se admite el tipo de valor devuelto final después de un declarador que no es de función
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,34): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,35): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,27): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,35): error C2146: error de sintaxis: falta ')' delante del identificador 'lista'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,35): error C3646: 'lista': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,40): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(17,15): error C2511: 'int Vendedor::cobrar(int)': la función miembro sobrecargada no se ha encontrado en 'Vendedor'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(12,7): message : vea la declaración de 'Vendedor'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(25,29): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,30): error C3927: "->": no se admite el tipo de valor devuelto final después de un declarador que no es de función
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,37): error C3484: error de sintaxis: se esperaba '->' antes del tipo de valor devuelto
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,38): error C3613: falta el tipo de devolución después de '->' (se presupone 'int')
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,30): error C2860: 'void' no se puede usar como parámetro de función excepto '(void)'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,38): error C2146: error de sintaxis: falta ')' delante del identificador 'metodopago'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,38): error C3646: 'metodopago': especificador de invalidación desconocido
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,48): error C2059: error de sintaxis: ')'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(33,15): error C2511: 'int Vendedor::Descuento(int)': la función miembro sobrecargada no se ha encontrado en 'Vendedor'
-C:\Users\zavid\source\repos\tplp1\Model\Vendedor.h(12,7): message : vea la declaración de 'Vendedor'
+  main.cpp
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(17,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(18,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(19,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(21,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(22,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(23,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(25,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
-  Compilando...
-  Presupuesto.cpp
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(8,62): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(9,63): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(10,64): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(11,67): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(12,68): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(15,76): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Generando código...
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\Presupuesto.cpp(28): error C4716: 'generarPresupuesto': debe devolver un valor
+C:\Users\zavid\source\repos\tplp1\Model\Vendedor.cpp(38): warning C4715: 'Vendedor::Descuento': no todas las rutas de acceso de control devuelven un valor

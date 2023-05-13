@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _PORTATILES_H
 #define _PORTATILES_H
 
@@ -11,7 +10,7 @@
 
 class Portatiles: public Herramientas {
 public: 
-    Portatiles(string modelo_, string funcion_, float precioherra_, int tiempoalq_, int duracionbat_);
+    Portatiles(string modelo_, string funcion_, float precioherra_, int tiempoalq_, float seguro_, int duracionbat_);
     ~Portatiles();
     
 void cargar();

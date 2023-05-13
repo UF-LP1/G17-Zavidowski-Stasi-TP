@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _MANUALES_H
 #define _MANUALES_H
 
@@ -11,7 +10,7 @@
 
 class Manuales: public Herramientas {
 public: 
-    Manuales(string modelo_, string funcion_, float precioherra_, int tiempoalq_, string modouso_);
+    Manuales(string modelo_, string funcion_, float precioherra_, int tiempoalq_, float seguro, string modouso_);
     ~Manuales();
     
 void usar();

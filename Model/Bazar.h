@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _BAZAR_H
 #define _BAZAR_H
 

@@ -1,16 +1,7 @@
-/**
- * Project Untitled
- */
-
 
 #include "Arthabituales.h"
 
-//NO TENEMOS LOS METODOS
-
-/**
- * Arthabituales implementation
- */
-Arthabituales::Arthabituales(float precioart_, string material_, int numarticulo_, string tipo_) : Articulos(precioart_, material_, numarticulo_), tipo(tipo_) {
+Arthabituales::Arthabituales(float precioart_, string material_, int numarticulo_, string tipo_) : Articulos(precioart_, material_, numarticulo_) {
 	this->tipo = tipo_;
 }
 

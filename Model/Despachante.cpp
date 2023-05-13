@@ -1,14 +1,8 @@
-/**
- * Project Untitled
- */
-
 
 #include "Despachante.h"
 
-/**
- * Despachante implementation
- */
-Despachante::Despachante(string nombreemp_, string DNI_, string curriculum_, string rubro_, int costoenvio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_) {
+
+Despachante::Despachante(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_, int costoenvio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo_,horariolab_) {
     this->costoenvio = costoenvio_;
 }
 
@@ -16,17 +10,12 @@ Despachante::~Despachante()
 {
 }
 
-/**
- * @param Cliente.domicilio
- * @return void
- */
-void Despachante::entregarpedido(Cliente.domicilio) {
+
+void Despachante::entregarpedido() {
     return;
 }
 
-/**
- * @return int
- */
-int Despachante::cobrar() {
+
+int Despachante::cobrarenvio() {
     return 0;
 }

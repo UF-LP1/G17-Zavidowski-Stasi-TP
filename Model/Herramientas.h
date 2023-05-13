@@ -1,6 +1,3 @@
-/**
- * Project Untitled
- */
 
 #include "Header.h"
 #ifndef _HERRAMIENTAS_H
@@ -8,7 +5,7 @@
 
 class Herramientas {
 public: 
-    Herramientas(string modelo_, string funcion_, float precioherra_, int tiempoalq_);
+    Herramientas(string modelo_, string funcion_, float precioherra_, int tiempoalq_, float seguro_);
     ~Herramientas();
 
 const string get_modelo();
@@ -21,19 +18,13 @@ int get_tiempoalq();
     
 const string get_funcion();
     
-/**
- * @param NuevoPre
- */
+
 void set_precio(float NuevoPre);
     
-/**
- * @param NuevoSeguro
- */
+
 void set_seguro(float NuevoSeguro);
     
-/**
- * @param TiempoNuevo
- */
+
 void set_tiempoalq(int TiempoNuevo);
     
 int devolverseguro();

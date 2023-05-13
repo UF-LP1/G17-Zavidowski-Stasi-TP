@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _ELECTRICIDAD_H
 #define _ELECTRICIDAD_H
 

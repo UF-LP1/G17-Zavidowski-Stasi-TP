@@ -1,7 +1,6 @@
 /**
  * Project Untitled
  */
-
 #include "Header.h"
 #ifndef _EMPLEADOS_H
 #define _EMPLEADOS_H
@@ -10,9 +9,9 @@
 
 class Empleados {
 public: 
-    Empleados(string nombreemp_, string DNI_, string curriculum_, string rubro_);
+    Empleados(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_);
     ~Empleados();
-float generarPresupuesto(forward_list<Articulos> ListaArtCli);
+
     
 const string get_nombreemp();
     

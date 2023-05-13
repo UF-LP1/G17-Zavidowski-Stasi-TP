@@ -1,21 +1,19 @@
-/**
- * Project Untitled
- */
-#include "Vendedor.h"
+
 #include "Cliente.h"
 
-/**
- * Cliente implementation
- */
-Cliente::Cliente( string nombrecli_, int numcliente_, string metodopago_) :  nombrecli(nombrecli_), numcliente(numcliente_){
-    this->metodopago = metodopago_;
+Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, forward_list<Articulos>ListaArtCli) : nombrecli(nombrecli_), numcliente(numcliente_)
+{
+    this->metodopagouso = metodopagouso_;
+    this->ListaArtCli = ListaArtCli;
+    
 }
 
 Cliente::~Cliente()
 {
 }
 
-void Cliente::agregarArt(Articulos nombre_art){
+void Cliente::agregarArt(Articulos nombre_art)
+{
     ListaArtCli.push_front(nombre_art);
     return;
 }
@@ -25,45 +23,52 @@ forward_list<Articulos> Cliente::get_lista()
     return this->ListaArtCli;
 }
 
-/**
- * @return const string
- */
+
 const string Cliente::get_nombrecli() {
     return this->nombrecli;
 }
 
-/**
- * @return const string
- */
+
 const int Cliente::get_numcliente() {
     return this->numcliente;
 }
 
-/**
- * @return string
- */
-string Cliente::get_pago() {
-    return this->metodopago;
+
+metodopago Cliente::get_pago() {
+    return this->metodopagouso;
 }
 
-/**
- * @param Metodopago
- * @return void
- */
-void Cliente::set_pago(string Metodopago) {
-    metodopago = Metodopago;
+
+void Cliente::set_pago(metodopago MetodoPagoUso) {
+    this->metodopagouso = MetodoPagoUso;
     return;
 }
 
-/**
- * @param Vendedor.cobrar
- * @return bool
- */
-bool Cliente::pagar(Vendedor.cobrar) {
-    return false;
+
+float Cliente::pagar(float acumprecio) {
+    return acumprecio; 
 }
 
-/**
- * @param Articulos
- * @return Articulos
- */
+bool Cliente::CambiarProd(Articulos A, Articulos B)
+{
+ 
+    std::forward_list<int>::iterator it;
+    bool esta = false;
+    for (forward_list<Articulos>::iterator it = get_lista().begin(); it != get_lista().end(); ++it)
+    {
+        if (it->get_numarticulo() == A.get_numarticulo())
+        {
+            esta = true;
+            ListaArtCli.erase_after(it);
+            ListaArtCli.push_front(B);
+        }
+      
+    }
+    if (esta == false)
+        throw exception("No se encontro el producto que quiere cambiar en la lista");
+
+    return false;
+}
+// metodo cambiar producto que recibe dos articulos
+
+

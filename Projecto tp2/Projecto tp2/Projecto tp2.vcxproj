@@ -139,12 +139,12 @@
     <ClCompile Include="..\..\Model\Ferreteria.cpp" />
     <ClCompile Include="..\..\Model\Herramientas.cpp" />
     <ClCompile Include="..\..\Model\Iluminacion.cpp" />
-    <ClCompile Include="..\..\Model\main.cpp" />
     <ClCompile Include="..\..\Model\Manuales.cpp" />
     <ClCompile Include="..\..\Model\Plomero.cpp" />
     <ClCompile Include="..\..\Model\Portatiles.cpp" />
     <ClCompile Include="..\..\Model\Repuestos.cpp" />
     <ClCompile Include="..\..\Model\Vendedor.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Model\Arthabituales.h" />
@@ -166,6 +166,7 @@
     <ClInclude Include="..\..\Model\Portatiles.h" />
     <ClInclude Include="..\..\Model\Repuestos.h" />
     <ClInclude Include="..\..\Model\Vendedor.h" />
+    <ClInclude Include="metodopago.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

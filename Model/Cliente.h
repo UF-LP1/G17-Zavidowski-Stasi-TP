@@ -1,15 +1,16 @@
-/**
- * Project Untitled
- */
+
 #include "Articulos.h"
 #include "Header.h"
 #include <forward_list>
+#include "llave.h"
+#include "../Projecto tp2/Projecto tp2/metodopago.h"
+#include "Vendedor.h"
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
 class Cliente {
 public: 
-    Cliente( string nombrecli_, int numcliente_, string metodopago_);
+    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, forward_list<Articulos>ListaArtCli);
     ~Cliente();
  
 void agregarArt(Articulos nombre_art);
@@ -20,29 +21,26 @@ const string get_nombrecli();
     
 const int get_numcliente();
     
-string get_pago();
+metodopago get_pago();
     
-/**
- * @param Metodopago
- */
-void set_pago(string Metodopago);
+
+void set_pago(metodopago MetodoPagoUso);
     
-/**
- * @param Vendedor.cobrar
- */
-bool pagar(float Total);
+
+float pagar(float acumprecio);
+
+bool CambiarProd(Articulos A, Articulos B);
+             
     
-/**
- * @param Articulos
- */
+
 private: 
     std::forward_list<Articulos> ListaArtCli;
     const string nombrecli;
     const int numcliente;
-    string metodopago;
+    metodopago metodopagouso;
     Articulos lista; 
     string domicilio;
-    enum llave llavenecesaria;
+    llave llavenecesaria;
     string instalacionrota;
 
    
