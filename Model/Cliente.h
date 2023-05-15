@@ -1,16 +1,15 @@
-
 #include "Articulos.h"
-#include "Header.h"
-#include <forward_list>
 #include "llave.h"
+#include <forward_list>
 #include "../Projecto tp2/Projecto tp2/metodopago.h"
-#include "Vendedor.h"
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
+
 class Cliente {
 public: 
-    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, forward_list<Articulos>ListaArtCli);
+    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_);
+    Cliente();
     ~Cliente();
  
 void agregarArt(Articulos nombre_art);
@@ -38,12 +37,11 @@ private:
     const string nombrecli;
     const int numcliente;
     metodopago metodopagouso;
-    Articulos lista; 
+   /*Articulos lista;
     string domicilio;
     llave llavenecesaria;
-    string instalacionrota;
-
-   
+    string instalacionrota;*/
+ 
 };
 
 #endif //_CLIENTE_H

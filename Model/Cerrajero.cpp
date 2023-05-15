@@ -34,6 +34,6 @@ void Cerrajero::set_telefonoc(string NuevoTel) {
 }
 
 llave Cerrajero::hacerllave(llave uno) {
-    //hacer un dynamic cast para ver que tipo de llave recibe 
+     //hacer un dynamic cast para ver que tipo de llave recibe 
     return uno;
 }

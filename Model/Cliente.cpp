@@ -1,12 +1,14 @@
 
 #include "Cliente.h"
 
-Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, forward_list<Articulos>ListaArtCli) : nombrecli(nombrecli_), numcliente(numcliente_)
+
+
+Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_): nombrecli(nombrecli_), numcliente(numcliente_)
 {
     this->metodopagouso = metodopagouso_;
     this->ListaArtCli = ListaArtCli;
-    
 }
+
 
 Cliente::~Cliente()
 {

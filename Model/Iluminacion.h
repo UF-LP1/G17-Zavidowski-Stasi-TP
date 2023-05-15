@@ -3,7 +3,6 @@
 #define _ILUMINACION_H
 
 #include "Electricidad.h"
-#include "Articulos.h"
 
 
 class Iluminacion: public Electricidad {

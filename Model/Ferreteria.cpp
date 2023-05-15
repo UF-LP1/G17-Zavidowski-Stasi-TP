@@ -40,8 +40,3 @@ void Ferreteria::set_horario(string NuevoHorario) {
     return;
 }
 
-
-void Ferreteria::vender() {
-
-    return;
-}

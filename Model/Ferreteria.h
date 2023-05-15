@@ -20,8 +20,6 @@ string get_telefono();
 void set_ubi(string NuevaUbi);
     
 void set_horario(string NuevoHorario);
-    
-void vender();
 
 private: 
     string ubicacion;

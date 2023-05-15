@@ -6,7 +6,6 @@
 #define _CERRAJERO_H
 
 #include "Empleados.h"
-#include "llave.h"
 
 class Cerrajero: public Empleados {
 public: 

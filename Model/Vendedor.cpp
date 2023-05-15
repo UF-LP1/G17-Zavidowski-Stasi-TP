@@ -1,5 +1,5 @@
 
-#include "Cliente.h"
+#include "Vendedor.h"
 
 
 Vendedor::Vendedor(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_, int descuento_, string metododescuento_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo_, horariolab_) 
