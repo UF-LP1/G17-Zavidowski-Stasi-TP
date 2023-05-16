@@ -1,12 +1,12 @@
 
 #include "Cliente.h"
+#include <algorithm>
 
 
-
-Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_): nombrecli(nombrecli_), numcliente(numcliente_)
+Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
 {
     this->metodopagouso = metodopagouso_;
-    this->ListaArtCli = ListaArtCli;
+  
 }
 
 
@@ -16,11 +16,11 @@ Cliente::~Cliente()
 
 void Cliente::agregarArt(Articulos nombre_art)
 {
-    ListaArtCli.push_front(nombre_art);
+    ListaArtCli.push_back(nombre_art);
     return;
 }
 
-forward_list<Articulos> Cliente::get_lista()
+list<Articulos> Cliente::get_lista()
 {
     return this->ListaArtCli;
 }
@@ -53,19 +53,23 @@ float Cliente::pagar(float acumprecio) {
 
 bool Cliente::CambiarProd(Articulos A, Articulos B)
 {
- 
-    std::forward_list<int>::iterator it;
+    //int cant = ListaArtCli.size();
     bool esta = false;
-    for (forward_list<Articulos>::iterator it = get_lista().begin(); it != get_lista().end(); ++it)
+    for (list<Articulos>::iterator it = get_lista().begin(); ; ++it)
+    //for (Articulos&  a : ListaArtCli)
+    //for(int i=0; i<cant; i++)
     {
-        if (it->get_numarticulo() == A.get_numarticulo())
+           //if (a.get_numarticulo() == A.get_numarticulo())
+        if(it->get_numarticulo() == B.get_numarticulo())
         {
             esta = true;
-            ListaArtCli.erase_after(it);
+            ListaArtCli.erase(it);
             ListaArtCli.push_front(B);
         }
       
     }
+
+
     if (esta == false)
         throw exception("No se encontro el producto que quiere cambiar en la lista");
 

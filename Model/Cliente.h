@@ -1,6 +1,6 @@
 #include "Articulos.h"
 #include "llave.h"
-#include <forward_list>
+#include <list>
 #include "../Projecto tp2/Projecto tp2/metodopago.h"
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
@@ -8,13 +8,12 @@
 
 class Cliente {
 public: 
-    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_);
-    Cliente();
+    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli);
     ~Cliente();
  
 void agregarArt(Articulos nombre_art);
 
-forward_list<Articulos> get_lista();
+list<Articulos> get_lista();
 
 const string get_nombrecli();
     
@@ -33,7 +32,7 @@ bool CambiarProd(Articulos A, Articulos B);
     
 
 private: 
-    std::forward_list<Articulos> ListaArtCli;
+    std::list<Articulos> ListaArtCli;
     const string nombrecli;
     const int numcliente;
     metodopago metodopagouso;

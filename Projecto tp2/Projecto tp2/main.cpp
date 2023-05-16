@@ -11,18 +11,9 @@
 
 int main() {
 
-	forward_list<Articulos> list;
+	list<Articulos> list;
 	Cliente* Pablo = new Cliente("Pablo", 3234, efectivo, list);
 
-	/*Articulos* art1 = new Bazar(34.3, "madera", 3229, "marron", 22.2);
-	Articulos* art2 = new Arthabituales (21.2, "metal", 2216, "clavo");
-	Articulos* art3 = new Iluminacion(19.2, "plastico", 6429, 20, 68, "doble", "universal");
-	Articulos* art4 = new Cables (13, "goma", 8536, 22, 80, 100);
-	Articulos* art5 = new Bazar (70.8, "madera", 7329, "blanco", 38.5);
-	Articulos* art6 = new Arthabituales (18.6, "metal", 2826, "tornillo");
-	Articulos* art7 = new Iluminacion (14.6, "plastico", 6820, 40, 80, "simple", "USB");
-	Articulos* art8 = new Cables (27, "goma", 5216, 20, 180, 200);
-	Articulos* ArtB = new Bazar (57.8, "plastico", 6619, "verde", 18.5);*/
 
 	Bazar art1(34.3, "madera", 3229, "marron", 22.2);
 	Arthabituales art2(21.2, "metal", 2216, "clavo");
@@ -55,6 +46,8 @@ int main() {
 	float acumprecio = UNO.cobrar(Pablo);
 
 	Pablo->pagar(acumprecio);
+
+	cout << "El total es: $" << acumprecio << endl; 
 
 	delete Pablo;
 

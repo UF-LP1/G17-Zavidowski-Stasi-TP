@@ -16,9 +16,9 @@ float Vendedor::cobrar(Cliente* Cli) //esta funcion recorre la lista y acumula l
 {
 	int count = 0;
 	float acumprecio = 0;
-	for (forward_list<Articulos>::iterator it = Cli->get_lista().begin(); it != Cli->get_lista().end(); ++it) {
+	for (Articulos& a : Cli->get_lista()) {
 		count++;
-		acumprecio += it->get_precioart();
+		acumprecio += a.get_precioart();
 
 	}
 	int desc= this->Descuento(Cli->get_pago());    //llamo a la funcion descuento

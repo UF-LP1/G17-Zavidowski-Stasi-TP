@@ -1,32 +1,9 @@
-﻿  Cliente.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\forward_list(942,27): error C2280: 'Articulos &Articulos::operator =(const Articulos &)': se está intentando hacer referencia a una función eliminada.
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.h(27,1): message : el compilador generó 'Articulos::operator =' aquí
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.h(27,1): message : "Articulos &Articulos::operator =(const Articulos &)": la función se eliminó implícitamente porque "Articulos" tiene un miembro de datos "Articulos::numarticulo" de un tipo que no es de clase calificado constante.
-C:\Users\zavid\source\repos\tplp1\Model\Articulos.h(26,15): message : vea la declaración de 'Articulos::numarticulo'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\forward_list(776,1): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::forward_list<Articulos,std::allocator<Articulos>>::_Assign_unchecked<std::_Flist_unchecked_const_iterator<std::_Flist_val<std::_Flist_simple_types<_Ty>>,std::_Iterator_base0>,std::_Default_sentinel>(_UIter,const _Sentinel)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _UIter=std::_Flist_unchecked_const_iterator<std::_Flist_val<std::_Flist_simple_types<Articulos>>,std::_Iterator_base0>,
-              _Sentinel=std::_Default_sentinel
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\forward_list(776,26): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::forward_list<Articulos,std::allocator<Articulos>>::_Assign_unchecked<std::_Flist_unchecked_const_iterator<std::_Flist_val<std::_Flist_simple_types<_Ty>>,std::_Iterator_base0>,std::_Default_sentinel>(_UIter,const _Sentinel)" que se está compilando
-          with
-          [
-              _Ty=Articulos,
-              _UIter=std::_Flist_unchecked_const_iterator<std::_Flist_val<std::_Flist_simple_types<Articulos>>,std::_Iterator_base0>,
-              _Sentinel=std::_Default_sentinel
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\forward_list(759,1): message : al compilar la función del miembro clase plantilla "std::forward_list<Articulos,std::allocator<Articulos>> &std::forward_list<Articulos,std::allocator<Articulos>>::operator =(const std::forward_list<Articulos,std::allocator<Articulos>> &)"
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.cpp(9,23): message : Vea la referencia a la creación de una instancia de la función plantilla "std::forward_list<Articulos,std::allocator<Articulos>> &std::forward_list<Articulos,std::allocator<Articulos>>::operator =(const std::forward_list<Articulos,std::allocator<Articulos>> &)" que se está compilando
-C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(35,34): message : Vea la referencia a la creación de una instancia de clase plantilla "std::forward_list<Articulos,std::allocator<Articulos>>" que se está compilando
-  Despachante.cpp
-  main.cpp
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(27,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(28,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(29,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(31,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(32,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(33,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(35,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Generando código...
+﻿  main.cpp
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(18,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(19,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(20,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(22,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(23,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(24,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(26,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Projecto tp2.vcxproj -> C:\Users\zavid\source\repos\tplp1\Projecto tp2\x64\Debug\Projecto tp2.exe
