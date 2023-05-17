@@ -29,7 +29,6 @@ float pagar(float acumprecio);
 
 bool CambiarProd(Articulos A, Articulos B);
              
-    
 
 private: 
     std::list<Articulos> ListaArtCli;

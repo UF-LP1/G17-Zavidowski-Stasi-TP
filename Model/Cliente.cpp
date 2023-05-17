@@ -53,22 +53,30 @@ float Cliente::pagar(float acumprecio) {
 
 bool Cliente::CambiarProd(Articulos A, Articulos B)
 {
-    //int cant = ListaArtCli.size();
+  
     bool esta = false;
-    for (list<Articulos>::iterator it = get_lista().begin(); ; ++it)
-    //for (Articulos&  a : ListaArtCli)
-    //for(int i=0; i<cant; i++)
+     for(std::list<Articulos>::iterator it = ListaArtCli.begin(); it != ListaArtCli.end(); it++)
     {
-           //if (a.get_numarticulo() == A.get_numarticulo())
-        if(it->get_numarticulo() == B.get_numarticulo())
+        float devolver = 0;
+        float pedir = 0;
+        if (it->get_numarticulo() == B.get_numarticulo())
         {
             esta = true;
             ListaArtCli.erase(it);
-            ListaArtCli.push_front(B);
+            ListaArtCli.push_front(A);
+            if (it->get_precioart() > B.get_precioart()) {
+                devolver = B.get_precioart() - A.get_precioart();
+                cout << "tu vuelto es de $" << devolver << endl;
+            }
+            else
+            {
+                pedir = A.get_precioart() - B.get_precioart();
+                cout << "debes pagar" << pedir << endl;
+            }
         }
-      
-    }
 
+       
+    }
 
     if (esta == false)
         throw exception("No se encontro el producto que quiere cambiar en la lista");

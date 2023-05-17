@@ -2,8 +2,9 @@
 #include "Cerrajero.h"
 
 
-Cerrajero::Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo, horariolab), servicio(servicio_) {
+Cerrajero::Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_, float precio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo, horariolab), servicio(servicio_) {
     this->tipollave = tipollave_;
+    this->precio = precio_;
 }
 
 Cerrajero::~Cerrajero()
@@ -15,7 +16,7 @@ enum llave Cerrajero::get_tipollave() {
 }
 
 float Cerrajero::get_precio() {
-    return this->precio;
+  return this->precio;
 }
 
 string Cerrajero::get_telefonoc() {

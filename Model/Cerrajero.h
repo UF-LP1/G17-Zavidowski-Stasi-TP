@@ -9,7 +9,7 @@
 
 class Cerrajero: public Empleados {
 public: 
-    Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_);
+    Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_, float precio_);
     ~Cerrajero();
 
 llave get_tipollave();

@@ -8,3 +8,9 @@ Arthabituales::Arthabituales(float precioart_, string material_, int numarticulo
 Arthabituales::~Arthabituales()
 {
 }
+
+void Arthabituales::imprimir()
+{
+	Articulos::imprimir(); 
+	cout << "Tipo: " << tipo << endl;
+}

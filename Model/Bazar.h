@@ -16,6 +16,9 @@ public:
 const string get_color();
     
 const float get_tamanyo();
+
+void imprimir();
+
 private: 
     const string color;
     const float tamanyo;

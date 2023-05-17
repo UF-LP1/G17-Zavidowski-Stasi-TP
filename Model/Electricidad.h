@@ -15,6 +15,9 @@ public:
 int get_potencia();
     
 float get_consumo();
+
+void imprimir();
+
 protected: 
 int potencia;
 float consumo;

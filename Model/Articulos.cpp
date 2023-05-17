@@ -30,7 +30,10 @@ void Articulos::set_precio(float NuevoPrecio) {
     return;
 }
 
-void imprimir()
+void Articulos::imprimir()
 {
+    cout << "Precio: "  << precioart<< endl;;
+    cout << "Material: " << material<< endl;
+    cout << "Numero de articulo: " << numarticulo << endl; ;
 
 }

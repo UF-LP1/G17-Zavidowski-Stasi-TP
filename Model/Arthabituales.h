@@ -8,6 +8,8 @@ public:
     Arthabituales(float precioart_, string material_, int numarticulo_, string tipo_);
     ~Arthabituales();
 
+    void imprimir();
+
 private: 
     
      string tipo;

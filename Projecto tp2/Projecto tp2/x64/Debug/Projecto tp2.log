@@ -1,9 +1,10 @@
 ﻿  main.cpp
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(18,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(19,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(20,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(22,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(23,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(24,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(26,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(20,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(21,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(22,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(24,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(25,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(26,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(28,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(49,126): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Projecto tp2.vcxproj -> C:\Users\zavid\source\repos\tplp1\Projecto tp2\x64\Debug\Projecto tp2.exe

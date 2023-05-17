@@ -18,3 +18,10 @@ const string Bazar::get_color() {
 const float Bazar::get_tamanyo() {
     return this->tamanyo;
 }
+void Bazar::imprimir()
+{
+    Articulos::imprimir();
+    //cout << "Color:" "Tamanyo:" << color << tamanyo << endl;
+    cout << "Color: " << color<<endl; 
+    cout << "Tamanyo: " << tamanyo<<endl ; 
+}

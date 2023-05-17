@@ -20,3 +20,11 @@ int Electricidad::get_potencia() {
 float Electricidad::get_consumo() {
     return this->consumo;
 }
+
+void Electricidad::imprimir()
+{
+    Articulos::imprimir();
+    //cout << "Potencia:" "Consumo:" << potencia << consumo << endl;
+    cout << "Potencia: " << potencia << endl;;
+    cout << "Consumo: " << consumo<<endl ; 
+}

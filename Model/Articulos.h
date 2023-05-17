@@ -20,6 +20,9 @@ const int get_numarticulo();
 friend void imprimir();
     
 void set_precio(float NuevoPrecio);
+
+virtual void imprimir();
+
 protected: 
     float precioart;
     const string material;
