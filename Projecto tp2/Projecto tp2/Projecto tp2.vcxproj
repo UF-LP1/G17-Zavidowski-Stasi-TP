@@ -166,6 +166,7 @@
     <ClInclude Include="..\..\Model\Portatiles.h" />
     <ClInclude Include="..\..\Model\Repuestos.h" />
     <ClInclude Include="..\..\Model\Vendedor.h" />
+    <ClInclude Include="Arreglosplomero.h" />
     <ClInclude Include="metodopago.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -17,7 +17,6 @@ const string get_material();
   
 const int get_numarticulo();
 
-friend void imprimir();
     
 void set_precio(float NuevoPrecio);
 

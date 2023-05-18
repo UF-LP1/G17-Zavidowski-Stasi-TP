@@ -37,3 +37,4 @@ void Articulos::imprimir()
     cout << "Numero de articulo: " << numarticulo << endl; ;
 
 }
+

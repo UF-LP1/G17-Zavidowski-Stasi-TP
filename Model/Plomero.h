@@ -6,21 +6,23 @@
 #define _PLOMERO_H
 
 #include "Empleados.h"
+#include "../Projecto tp2/Projecto tp2/Arreglosplomero.h"
 
 
 class Plomero: public Empleados {
 public: 
-    Plomero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_, int valorservicio_);
+    Plomero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_);
     ~Plomero();
     
 /**
  * @param Cliente.instalacionrota
  */
-void arreglar();
+string arreglar(Arregloplomero);
     
-int get_valorservicio();
+float cobrar(Arregloplomero);
+
 private: 
-    int valorservicio;
+    
 };
 
 #endif //_PLOMERO_H

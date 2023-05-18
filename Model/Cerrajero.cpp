@@ -2,31 +2,19 @@
 #include "Cerrajero.h"
 
 
-Cerrajero::Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_, float precio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo, horariolab), servicio(servicio_) {
-    this->tipollave = tipollave_;
-    this->precio = precio_;
+Cerrajero::Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, string servicio_) : Empleados(nombreemp_, DNI_, curriculum_, rubro_, sueldo, horariolab), servicio(servicio_) {
+
 }
 
 Cerrajero::~Cerrajero()
 {
 }
 
-enum llave Cerrajero::get_tipollave() {
-    return this->tipollave;
-}
-
-float Cerrajero::get_precio() {
-  return this->precio;
-}
 
 string Cerrajero::get_telefonoc() {
     return this->telefonoc;
 }
 
-void Cerrajero::set_precio(float Nuevopre) {
-    precio = Nuevopre;
-    return;
-}
 
 
 void Cerrajero::set_telefonoc(string NuevoTel) {
@@ -34,7 +22,53 @@ void Cerrajero::set_telefonoc(string NuevoTel) {
     return;
 }
 
-llave Cerrajero::hacerllave(llave uno) {
-     //hacer un dynamic cast para ver que tipo de llave recibe 
-    return uno;
+string Cerrajero::hacerllave(llave llavecita) {
+   
+
+    switch (llavecita){
+   
+    case llave::simple :
+       
+        return "Se hizo tu llave simple";
+
+    case llave::codificadas:
+        return "Se hizo tu llave codificada";
+
+    case llave::dobletambor:
+        return "Se hizo tu llave doble tambor";
+
+    case llave::llavesmagneticas:
+        return "Se hizo tu llave magnetica";
+
+     }
+    return "";
+}
+
+float Cerrajero::cobrar(llave llaveprecio)
+{
+    float precio1 = 80;
+    float precio2 = 120;
+    float precio3 = 180;
+    float precio4 = 220;
+
+    switch (llaveprecio) {
+
+    case llave::simple:
+       
+        return precio1; 
+
+    case llave::codificadas:
+        
+            return precio2;
+
+    case llave::dobletambor:
+      
+        return precio3;
+
+    case llave::llavesmagneticas:
+      
+        return precio4;
+
+    }
+    return 0;
 }

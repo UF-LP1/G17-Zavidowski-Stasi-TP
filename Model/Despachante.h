@@ -10,18 +10,15 @@
 
 class Despachante: public Empleados {
 public: 
-    Despachante(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_, int costoenvio_);
+    Despachante(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_);
     ~Despachante();
     
-/**
- * @param Cliente.domicilio
- */
-void entregarpedido();
+
     
-int cobrarenvio();
+string cobrarenvio(int dom);
 private: 
   
-     int costoenvio;
+    // int costoenvio;
 };
 
 #endif //_DESPACHANTE_H

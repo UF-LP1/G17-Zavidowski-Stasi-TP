@@ -9,24 +9,23 @@
 
 class Cerrajero: public Empleados {
 public: 
-    Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab, llave tipollave_, string servicio_, float precio_);
+    Cerrajero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo, string horariolab,  string servicio_);
     ~Cerrajero();
 
-llave get_tipollave();
     
-float get_precio();
     
 string get_telefonoc();
-  
-void set_precio(float Nuevopre);
-   
+    
 void set_telefonoc(string NuevoTel);
 
-llave hacerllave(llave uno);
+string hacerllave(llave);
+
+float cobrar(llave);
+
 private: 
-    llave tipollave;
+   // llave tipollave;
     const string servicio;
-    float precio;
+   // float precio;
     string telefonoc;
 };
 

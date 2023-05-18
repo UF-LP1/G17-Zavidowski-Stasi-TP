@@ -27,11 +27,13 @@ void set_pago(metodopago MetodoPagoUso);
 
 float pagar(float acumprecio);
 
-bool CambiarProd(Articulos A, Articulos B);
-             
+string CambiarProd(Articulos A, Articulos B);
+            
+ static int get_cantclientes();
 
 private: 
     std::list<Articulos> ListaArtCli;
+    static int cantclientes;
     const string nombrecli;
     const int numcliente;
     metodopago metodopagouso;

@@ -2,16 +2,21 @@
 #include "Cliente.h"
 #include <algorithm>
 
-
+int Cliente::cantclientes = 0;
 Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
 {
     this->metodopagouso = metodopagouso_;
-  
+    cantclientes++;
 }
 
 
 Cliente::~Cliente()
 {
+    cantclientes--;
+}
+int Cliente::get_cantclientes()
+{
+    return cantclientes;
 }
 
 void Cliente::agregarArt(Articulos nombre_art)
@@ -51,7 +56,7 @@ float Cliente::pagar(float acumprecio) {
     return acumprecio; 
 }
 
-bool Cliente::CambiarProd(Articulos A, Articulos B)
+string Cliente::CambiarProd(Articulos A, Articulos B)
 {
   
     bool esta = false;
@@ -59,30 +64,32 @@ bool Cliente::CambiarProd(Articulos A, Articulos B)
     {
         float devolver = 0;
         float pedir = 0;
-        if (it->get_numarticulo() == B.get_numarticulo())
+        if (it->get_numarticulo() == A.get_numarticulo())
         {
             esta = true;
             ListaArtCli.erase(it);
-            ListaArtCli.push_front(A);
-            if (it->get_precioart() > B.get_precioart()) {
-                devolver = B.get_precioart() - A.get_precioart();
-                cout << "tu vuelto es de $" << devolver << endl;
+            ListaArtCli.push_front(B);
+            if (A.get_precioart() > B.get_precioart()) {
+                devolver = A.get_precioart() - B.get_precioart();
+                return "tu vuelto es de $" + to_string(devolver);
+                //cout << "tu vuelto es de $" << devolver << endl;
             }
             else
             {
-                pedir = A.get_precioart() - B.get_precioart();
-                cout << "debes pagar" << pedir << endl;
+                pedir = B.get_precioart() - A.get_precioart();
+                return "debes pagar" + to_string(pedir);
+             
             }
+            break;
         }
-
        
     }
+     if (esta == false)
+         throw exception("No se encontro el producto que quiere cambiar en la lista");
 
-    if (esta == false)
-        throw exception("No se encontro el producto que quiere cambiar en la lista");
-
-    return false;
+    return "";
 }
+
 // metodo cambiar producto que recibe dos articulos
 
 

@@ -1,5 +1,8 @@
 #include <list>
 #include <Windows.h>
+#include <ctime>
+#include <cstdlib>
+#include "Arreglosplomero.h"
 #include "../../Model/Header.h"
 #include "../../Model/Bazar.h"
 #include "../../Model/Iluminacion.h"
@@ -9,13 +12,35 @@
 #include "../../Model/Vendedor.h"
 #include "../../Model/Cerrajero.h"
 #include "../../Projecto tp2/Projecto tp2/metodopago.h"
+#include "../../Model/Plomero.h"
+#include "../../Model/Despachante.h"
+
+
+
+llave generarLlaveAleatoria() {
+	std::srand(std::time(nullptr));
+    int valorrandom = std::rand() % 4;
+	return static_cast<llave>(valorrandom);
+}
+
+Arregloplomero generarproblemaaleatorio() {
+	std::srand(std::time(nullptr));
+	int valorrandom = std::rand() % 4;
+	return static_cast<Arregloplomero>(valorrandom);
+}
+
 
 
 int main() {
 
-	list<Articulos> list;
-	Cliente* Pablo = new Cliente("Pablo", 3234, efectivo, list);
+	list<Articulos> lista;
+	list<Articulos> list2;
 
+	Cliente* Pablo = new Cliente("Pablo", 3234, efectivo, lista);
+	Cliente* Laura = new Cliente("Laura", 7632, debito, list2);
+
+	llave llavecita = generarLlaveAleatoria();
+	Arregloplomero arreglos = generarproblemaaleatorio();
 
 	Bazar art1(34.3, "madera", 3229, "marron", 22.2);
 	Arthabituales art2(21.2, "metal", 2216, "clavo");
@@ -36,23 +61,39 @@ int main() {
 	Pablo->agregarArt(art6);
 	Pablo->agregarArt(art7);
 	Pablo->agregarArt(art8);
-	//Pablo->agregarArt(ArtB); no le gusta esto para poder cambiar producto
+	
+	Laura->agregarArt(art3);
+	Laura->agregarArt(art5);
 
 	try {
-		Pablo->CambiarProd(art1, ArtB);
+		Pablo->CambiarProd(art8, ArtB);
 
 	}
 	catch (exception& e) {
 		std::cerr << "Error" << e.what() << std::endl;
 	}
 	Vendedor UNO("Juan", "32.342.344", "Experiencia", "Vendedor", 89000, "12:30 a 17:30", 20, "efectivo");
-	Cerrajero Pedro("Pedro", "29.432.765", "Experiencia", "Cerrajero", 5900, "9:00 a 15:30", llave::simple, "reparacion", 560.54);
+	Cerrajero Pedro("Pedro", "29.432.765", "Experiencia", "Cerrajero", 5900, "9:00 a 15:30", "reparacion");
+	Plomero Luis("Luis", "31.632.665", "experiencia", "cerrajero", 6700, "9:00 a 17:30");
+	Despachante Sergio("Sergio", "32.811.352", "exp", "Despachante", 5400, "9:00 a 13:00");
 
-	float acumprecio = UNO.cobrar(Pablo);
+	/*const char* videoLink = "https://www.youtube.com/watch?v=pOZvokjWbXM";
+	std::wstring wideVideoLink(videoLink, videoLink + strlen(videoLink));
+	Sleep(5000);
+	ShellExecute(NULL, L"open", wideVideoLink.c_str(), NULL, NULL, SW_SHOWNORMAL);*/
 
+	cout << "cliente:" << Pablo->get_nombrecli() << endl;
+	cout << "numero de cliente:" << Pablo->get_numcliente() << endl;
+
+	cout<< Pedro.hacerllave(llavecita);
+	cout << endl; 
+	cout<< Luis.arreglar(arreglos); 
+	cout << endl;
+	
+	Pablo->CambiarProd(art8, ArtB);
+
+	float acumprecio = UNO.cobrar(Pablo) + Pedro.cobrar(llavecita)+ Luis.cobrar(arreglos);
 	Pablo->pagar(acumprecio);
-
-	cout << "El total es: $" << acumprecio << endl; 
 	cout << endl; 
 	cout << "primer articulo" << endl;  art1.imprimir(); cout << endl;
     cout << "segundo articulo" << endl;  art2.imprimir(); cout << endl;
@@ -62,11 +103,25 @@ int main() {
 	cout << "sexto articulo" << endl;  art6.imprimir(); cout << endl;
 	cout << "septimo articulo" << endl;  art7.imprimir(); cout << endl;
 	cout << "octavo articulo" << endl;  art8.imprimir(); cout << endl;
+	cout << "El total es: $" << acumprecio << endl;
+
+	cout << "cliente:" << Laura->get_nombrecli() << endl;
+	cout << "numero de cliente:" << Laura->get_numcliente() << endl;
+
+	int domicilio;
+	cout << "Ingrese a cuantas cuadras de la ferreteria se encuentra:" << endl;
+	cin >> domicilio;
+	cout << Sergio.cobrarenvio(domicilio);
+	cout << endl;
+	cout << "primer articulo" << endl;  art3.imprimir(); cout << endl;
+	cout << "segundo articulo" << endl;  art4.imprimir(); cout << endl;
+
+	cout << "La cantidad de clientes que hay es: " << Cliente::get_cantclientes();
+
 	
 
-
 	delete Pablo;
-
+	delete Laura;
 
 	return 0;
 
