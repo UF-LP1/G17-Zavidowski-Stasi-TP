@@ -65,6 +65,8 @@ int main() {
 	Laura->agregarArt(art3);
 	Laura->agregarArt(art5);
 
+	Pablo->CambiarProd(art8, ArtB);
+
 	try {
 		Pablo->CambiarProd(art8, ArtB);
 
@@ -82,20 +84,21 @@ int main() {
 	Sleep(5000);
 	ShellExecute(NULL, L"open", wideVideoLink.c_str(), NULL, NULL, SW_SHOWNORMAL);*/
 
+	cout << "\033[4;32m";
 	cout << "cliente:" << Pablo->get_nombrecli() << endl;
 	cout << "numero de cliente:" << Pablo->get_numcliente() << endl;
+	cout << "\033[0m";
 
 	cout<< Pedro.hacerllave(llavecita);
 	cout << endl; 
 	cout<< Luis.arreglar(arreglos); 
 	cout << endl;
 	
-	Pablo->CambiarProd(art8, ArtB);
 
 	float acumprecio = UNO.cobrar(Pablo) + Pedro.cobrar(llavecita)+ Luis.cobrar(arreglos);
 	Pablo->pagar(acumprecio);
 	cout << endl; 
-	cout << "primer articulo" << endl;  art1.imprimir(); cout << endl;
+	/*cout << "primer articulo" << endl;  art1.imprimir(); cout << endl;
     cout << "segundo articulo" << endl;  art2.imprimir(); cout << endl;
 	cout << "tercer articulo" << endl;  art3.imprimir(); cout << endl;
 	cout << "cuarto articulo" << endl;  art4.imprimir(); cout << endl;
@@ -103,18 +106,28 @@ int main() {
 	cout << "sexto articulo" << endl;  art6.imprimir(); cout << endl;
 	cout << "septimo articulo" << endl;  art7.imprimir(); cout << endl;
 	cout << "octavo articulo" << endl;  art8.imprimir(); cout << endl;
-	cout << "El total es: $" << acumprecio << endl;
+	cout << "El total es: $" << acumprecio << endl;*/
+	
+	for (Articulos& articulos : lista) {
+		cout << "Articulo" << endl;
+		articulos.imprimir();
+	}
 
+
+
+	cout << "\033[4;35m";
 	cout << "cliente:" << Laura->get_nombrecli() << endl;
 	cout << "numero de cliente:" << Laura->get_numcliente() << endl;
+	cout << "\033[0m";
 
 	int domicilio;
 	cout << "Ingrese a cuantas cuadras de la ferreteria se encuentra:" << endl;
 	cin >> domicilio;
 	cout << Sergio.cobrarenvio(domicilio);
 	cout << endl;
-	cout << "primer articulo" << endl;  art3.imprimir(); cout << endl;
+	cout << "primer articulo" << endl;  art6.imprimir(); cout << endl;
 	cout << "segundo articulo" << endl;  art4.imprimir(); cout << endl;
+
 
 	cout << "La cantidad de clientes que hay es: " << Cliente::get_cantclientes();
 

@@ -1,2 +1,11 @@
-﻿  Cliente.cpp
+﻿  main.cpp
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(21,22): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(27,22): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(45,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(46,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(47,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(49,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(50,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(51,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(53,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Projecto tp2.vcxproj -> C:\Users\zavid\source\repos\tplp1\Projecto tp2\x64\Debug\Projecto tp2.exe
