@@ -9,7 +9,7 @@ Arthabituales::~Arthabituales()
 {
 }
 
-void Arthabituales::imprimir()
+void Arthabituales::imprimir() 
 {
 	Articulos::imprimir(); 
 	cout << "Tipo: " << tipo << endl;

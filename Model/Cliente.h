@@ -8,7 +8,7 @@
 
 class Cliente {
 public: 
-    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli);
+    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos*>ListaArtCli);
     ~Cliente();
  
 void agregarArt(Articulos nombre_art);
@@ -32,7 +32,7 @@ string CambiarProd(Articulos A, Articulos B);
  static int get_cantclientes();
 
 private: 
-    std::list<Articulos> ListaArtCli;
+    std::list<Articulos*> ListaArtCli;
     static int cantclientes;
     const string nombrecli;
     const int numcliente;

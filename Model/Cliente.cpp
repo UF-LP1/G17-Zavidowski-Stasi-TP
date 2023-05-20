@@ -3,7 +3,7 @@
 #include <algorithm>
 
 int Cliente::cantclientes = 0;
-Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
+Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos*>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
 {
     this->metodopagouso = metodopagouso_;
     cantclientes++;

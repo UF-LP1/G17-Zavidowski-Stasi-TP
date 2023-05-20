@@ -13,7 +13,7 @@ string Plomero::arreglar(Arregloplomero arreglos) {
 
     case Arregloplomero::instalacion:
 
-        return "Se instalo correctamente ";
+        return "Se instalo correctamente tu conexion de agua caliente ";
 
     case Arregloplomero::arreglodecanyerias:
         return "Tus canyerias ya funcionan correctamente";

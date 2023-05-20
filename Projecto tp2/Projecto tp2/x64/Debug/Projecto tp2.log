@@ -1,11 +1,72 @@
-﻿  main.cpp
+﻿  Articulos.cpp
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(35,30): error C2143: error de sintaxis: falta ';' delante de ':'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(35,33): error C2059: error de sintaxis: ')'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(35,36): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(39,13): error C2065: 'Bazar': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(39,20): error C2065: 'bazar': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(39,41): error C2061: error de sintaxis: identificador 'Bazar'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(39,60): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(41,39): error C2065: 'bazar': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(42,41): error C2065: 'bazar': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(46,13): error C2065: 'Iluminacion': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(46,26): error C2065: 'iluminacion': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(46,53): error C2061: error de sintaxis: identificador 'Iluminacion'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(46,78): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(48,42): error C2065: 'iluminacion': identificador no declarado
+C:\Users\zavid\source\repos\tplp1\Model\Articulos.cpp(49,38): error C2065: 'iluminacion': identificador no declarado
+  Plomero.cpp
+  main.cpp
 C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(21,22): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
 C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(27,22): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(45,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(46,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(47,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(49,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(50,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(51,66): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(53,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Projecto tp2.vcxproj -> C:\Users\zavid\source\repos\tplp1\Projecto tp2\x64\Debug\Projecto tp2.exe
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(45,63): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(46,71): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(47,90): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(49,63): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(50,74): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(51,86): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(53,64): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(56,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Bazar *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(56,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(56,7): message : al hacer coincidir la lista de argumentos '(Bazar *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(57,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Arthabituales *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(57,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(57,7): message : al hacer coincidir la lista de argumentos '(Arthabituales *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(58,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Iluminacion *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(58,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(58,7): message : al hacer coincidir la lista de argumentos '(Iluminacion *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(59,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Cables *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(59,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(59,7): message : al hacer coincidir la lista de argumentos '(Cables *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(60,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Bazar *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(60,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(60,7): message : al hacer coincidir la lista de argumentos '(Bazar *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(61,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Arthabituales *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(61,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(61,7): message : al hacer coincidir la lista de argumentos '(Arthabituales *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(62,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Iluminacion *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(62,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(62,7): message : al hacer coincidir la lista de argumentos '(Iluminacion *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(63,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Cables *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(63,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(63,7): message : al hacer coincidir la lista de argumentos '(Cables *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(65,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Iluminacion *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(65,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(65,7): message : al hacer coincidir la lista de argumentos '(Iluminacion *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(66,7): error C2664: 'void Cliente::agregarArt(Articulos)': el argumento 1 no puede convertirse de 'Bazar *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(66,20): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(14,6): message : vea la declaración de 'Cliente::agregarArt'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(66,7): message : al hacer coincidir la lista de argumentos '(Bazar *)'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(70,8): error C2664: 'std::string Cliente::CambiarProd(Articulos,Articulos)': el argumento 1 no puede convertirse de 'Cables *' a 'Articulos'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(70,22): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\zavid\source\repos\tplp1\Model\Cliente.h(30,8): message : vea la declaración de 'Cliente::CambiarProd'
+C:\Users\zavid\source\repos\tplp1\Projecto tp2\Projecto tp2\main.cpp(70,8): message : al hacer coincidir la lista de argumentos '(Cables *, Bazar *)'
+  Generando código...

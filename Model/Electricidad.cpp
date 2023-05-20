@@ -21,7 +21,7 @@ float Electricidad::get_consumo() {
     return this->consumo;
 }
 
-void Electricidad::imprimir()
+void Electricidad::imprimir() 
 {
     Articulos::imprimir();
     //cout << "Potencia:" "Consumo:" << potencia << consumo << endl;
