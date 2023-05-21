@@ -23,9 +23,8 @@ string hacerllave(llave);
 float cobrar(llave);
 
 private: 
-   // llave tipollave;
+ 
     const string servicio;
-   // float precio;
     string telefonoc;
 };
 

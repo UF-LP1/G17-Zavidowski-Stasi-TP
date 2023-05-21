@@ -3,7 +3,7 @@
 #include <algorithm>
 
 int Cliente::cantclientes = 0;
-Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos*>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
+Cliente::Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli): nombrecli(nombrecli_), numcliente(numcliente_), ListaArtCli(ListaArtCli)
 {
     this->metodopagouso = metodopagouso_;
     cantclientes++;
@@ -56,31 +56,30 @@ float Cliente::pagar(float acumprecio) {
     return acumprecio; 
 }
 
-string Cliente::CambiarProd(Articulos A, Articulos B)
+ string Cliente::CambiarProd(Articulos A, Articulos B)
 {
   
     bool esta = false;
      for(std::list<Articulos>::iterator it = ListaArtCli.begin(); it != ListaArtCli.end(); it++)
     {
-        float devolver = 0;
-        float pedir = 0;
+         float devolver = 0;
+         float pedir = 0;
         if (it->get_numarticulo() == A.get_numarticulo())
         {
             esta = true;
-            ListaArtCli.erase(it);
-            ListaArtCli.push_front(B);
+            ListaArtCli.erase(it);//borro de la lista el elemento que dejo
+            ListaArtCli.push_front(B);//agrego a la lista el nuevo elemento
             if (A.get_precioart() > B.get_precioart()) {
                 devolver = A.get_precioart() - B.get_precioart();
-                return "tu vuelto es de $" + to_string(devolver);
-                //cout << "tu vuelto es de $" << devolver << endl;
+                return "tu vuelto es de $ " + to_string(devolver);
+               
             }
             else
             {
                 pedir = B.get_precioart() - A.get_precioart();
-                return "debes pagar" + to_string(pedir);
+                return "debes pagar $ " + to_string(pedir);
              
             }
-            break;
         }
        
     }
@@ -90,6 +89,9 @@ string Cliente::CambiarProd(Articulos A, Articulos B)
     return "";
 }
 
-// metodo cambiar producto que recibe dos articulos
+
+
+
+
 
 

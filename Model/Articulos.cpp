@@ -34,29 +34,9 @@ void Articulos::set_precio(float NuevoPrecio) {
 
 void Articulos::imprimir()
 {
-    for (Articulos* articulo : //que le paso aca? get lista????()) {
-        Articulos->imprimir(); // Imprime los atributos comunes de Articulos
-
-        
-        if (Bazar* bazar = dynamic_cast<Bazar*>(articulo)) {
-            // Imprime los atributos específicos de Bazar
-            std::cout << "Color: " << bazar->get_color() << std::endl;
-            std::cout << "Tamanyo: " << bazar->get_tamanyo() << std::endl;
-        }
-
-        
-        if (Iluminacion* iluminacion = dynamic_cast<Iluminacion*>(articulo)) {
-            // Imprime los atributos específicos de Iluminacion
-            std::cout << "Potencia: " << iluminacion->get_potencia() << std::endl;
-            std::cout << "Tipo: " << iluminacion->get_consumo() << std::endl;
-        }
-        if (Arthabituales* arthabituales = dynamic_cast<Arthabituales*>(articulo)) {
-            // Imprime los atributos específicos de Iluminacion
-            std::cout << "Potencia: " << iluminacion->get_potencia() << std::endl;
-            std::cout << "Tipo: " << iluminacion->get_consumo() << std::endl;
-        }
-    }
-   
+    cout << "Precio: " << precioart << endl;;
+    cout << "Material: " << material << endl;
+    cout << "Numero de articulo: " << numarticulo << endl; ;
 
 }
 

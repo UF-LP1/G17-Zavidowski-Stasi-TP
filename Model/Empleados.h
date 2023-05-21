@@ -18,14 +18,8 @@ float get_sueldo();
     
 string get_horariolab();
     
-/**
- * @param NuevoSueldo
- */
 void set_sueldo(float NuevoSueldo);
     
-/**
- * @param NuevoHorario
- */
 void set_horariolab(string NuevoHorario);
 protected: 
     const string nombreemp;

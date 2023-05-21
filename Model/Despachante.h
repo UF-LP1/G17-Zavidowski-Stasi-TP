@@ -18,7 +18,7 @@ public:
 string cobrarenvio(int dom);
 private: 
   
-    // int costoenvio;
+   
 };
 
 #endif //_DESPACHANTE_H

@@ -17,9 +17,6 @@ const string get_descripcion();
     
 float get_tam();
     
-/**
- * @param NuevoTam
- */
 void set_tam(float NuevoTam);
 private: 
     const string nombreproduc;

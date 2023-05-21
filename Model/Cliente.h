@@ -8,7 +8,7 @@
 
 class Cliente {
 public: 
-    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos*>ListaArtCli);
+    Cliente(string nombrecli_, int numcliente_, metodopago metodopagouso_, list<Articulos>ListaArtCli);
     ~Cliente();
  
 void agregarArt(Articulos nombre_art);
@@ -21,26 +21,21 @@ const int get_numcliente();
     
 metodopago get_pago();
     
-
 void set_pago(metodopago MetodoPagoUso);
     
 
 float pagar(float acumprecio);
 
 string CambiarProd(Articulos A, Articulos B);
-            
+             
  static int get_cantclientes();
 
 private: 
-    std::list<Articulos*> ListaArtCli;
+    std::list<Articulos> ListaArtCli;
     static int cantclientes;
     const string nombrecli;
     const int numcliente;
     metodopago metodopagouso;
-   /*Articulos lista;
-    string domicilio;
-    llave llavenecesaria;
-    string instalacionrota;*/
  
 };
 

@@ -28,6 +28,8 @@ void set_seguro(float NuevoSeguro);
 void set_tiempoalq(int TiempoNuevo);
     
 int devolverseguro();
+
+
 protected: 
     const string modelo;
     const string funcion;

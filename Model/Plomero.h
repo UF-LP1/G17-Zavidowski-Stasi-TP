@@ -14,9 +14,6 @@ public:
     Plomero(string nombreemp_, string DNI_, string curriculum_, string rubro_, float sueldo_, string horariolab_);
     ~Plomero();
     
-/**
- * @param Cliente.instalacionrota
- */
 string arreglar(Arregloplomero);
     
 float cobrar(Arregloplomero);
